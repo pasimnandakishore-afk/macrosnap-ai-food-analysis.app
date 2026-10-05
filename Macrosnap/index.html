@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MacroSnap - AI Food Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📸 MacroSnap</h1>
+        <p>AI-Powered Food & Nutrition Analyzer</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Analyze Your Food</h2>
+
+            <p>
+                Upload a photo of your food and get estimated
+                nutritional information.
+            </p>
+
+            <label for="foodImage" class="upload-box">
+                <span class="camera">📷</span>
+                <span>Choose Food Image</span>
+            </label>
+
+            <input
+                type="file"
+                id="foodImage"
+                accept="image/*"
+            >
+
+            <img id="preview" alt="Food Preview">
+
+            <button id="analyzeBtn">
+                Analyze Food
+            </button>
+
+            <p id="status"></p>
+        </section>
+
+
+        <section id="result" class="card result-card">
+
+            <h2>🍽️ Nutrition Result</h2>
+
+            <div class="food-name">
+                <h3 id="foodName">-</h3>
+                <p>Detected Food</p>
+            </div>
+
+            <div class="nutrition-grid">
+
+                <div class="nutrition-item">
+                    <span>🔥</span>
+                    <h3 id="calories">-</h3>
+                    <p>Calories</p>
+                </div>
+
+                <div class="nutrition-item">
+                    <span>💪</span>
+                    <h3 id="protein">-</h3>
+                    <p>Protein</p>
+                </div>
+
+                <div class="nutrition-item">
+                    <span>🍚</span>
+                    <h3 id="carbs">-</h3>
+                    <p>Carbohydrates</p>
+                </div>
+
+                <div class="nutrition-item">
+                    <span>🥑</span>
+                    <h3 id="fat">-</h3>
+                    <p>Fat</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 MacroSnap | AI Vision Nutrition Assistant</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

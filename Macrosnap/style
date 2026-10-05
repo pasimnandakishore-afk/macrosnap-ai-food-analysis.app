@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+header {
+    background: #1f7a4d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+
+/* Main container */
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+/* Cards */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+}
+
+
+/* Upload */
+
+.upload-box {
+    width: 100%;
+    max-width: 450px;
+    min-height: 150px;
+
+    margin: 25px auto;
+
+    border: 2px dashed #1f7a4d;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    background: #eef9f3;
+}
+
+.camera {
+    font-size: 45px;
+}
+
+.upload-box span:last-child {
+    font-size: 17px;
+}
+
+
+/* Hide file input */
+
+#foodImage {
+    display: none;
+}
+
+
+/* Image preview */
+
+#preview {
+    display: none;
+
+    max-width: 100%;
+    max-height: 350px;
+
+    margin: 20px auto;
+
+    border-radius: 15px;
+}
+
+
+/* Button */
+
+button {
+    background: #1f7a4d;
+    color: white;
+
+    border: none;
+
+    padding: 14px 32px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #155b39;
+    transform: translateY(-2px);
+}
+
+
+/* Status */
+
+#status {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+
+/* Result */
+
+.result-card {
+    display: none;
+}
+
+.food-name {
+    margin: 20px 0;
+}
+
+.food-name h3 {
+    color: #1f7a4d;
+    font-size: 25px;
+}
+
+
+/* Nutrition */
+
+.nutrition-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.nutrition-item {
+    background: #f1f8f4;
+
+    padding: 22px;
+
+    border-radius: 12px;
+}
+
+.nutrition-item span {
+    font-size: 30px;
+}
+
+.nutrition-item h3 {
+    color: #1f7a4d;
+
+    font-size: 22px;
+
+    margin: 8px 0;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #666;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .nutrition-grid {
+        grid-template-columns: 1fr;
+    }
+}
